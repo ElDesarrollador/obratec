@@ -1,0 +1,22 @@
+{% extends "layout3.html" %} 
+{% block content %}
+<div align="center">
+    <br>
+    <h3>Archivos generados</h3>
+    <hr>
+    <br>
+    <p>Sus archivos están listos para ser descargados,</p>
+  <br>
+    <p>
+    <a href="{{ url_for('.descargarDGS') }}" class="alert alert-info" role="alert">Descargar DGS</a>
+	&nbsp;&nbsp;|&nbsp;&nbsp;
+	<a href="{{ url_for('.descargarKML') }}" class="alert alert-info" role="alert">Descargar KML</a>
+	</p>
+    <br>
+  <p><strong>Gracias</strong> por confiar en <strong>OBRATEC.</strong></p>
+    <br>
+  <a href="/" target="_self">
+    <button type="button" class="btn btn-outline-info">  FINALIZAR  </S></button></a>
+</div>
+
+{% endblock %}

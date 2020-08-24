@@ -1,0 +1,19 @@
+{% extends "layout2.html" %} 
+{% block content %}
+
+<h3 class="display-4">Procesar RED</h3>
+<p>Defina un <strong>nombre</strong> para la <strong>RED ELÉCTRICA</strong> que desea elaborar.</p>
+<ul>
+    <li>Archivo de línea: {{archivo_linea}}</li>
+    <li>Archivo de SED: {{archivo_SED}}</li>
+</ul>
+<hr>
+<br>
+<div align="center">
+    <form method="POST" action="{{url_for('generar')}}">
+        <input name="nombre" required type="text" placeholder="Nombre de RED">
+        <input type="submit" value="Enviar" class="btn-primary">
+    </form>
+</div>
+
+{% endblock %}

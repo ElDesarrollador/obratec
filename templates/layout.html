@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software OBRATEC</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="./static/css/main.css" />
+</head>
+<body>
+<div id="main" class="container">
+	<div id="nav" align="center">
+	  <div class="alert alert-warning" role="alert"><h3 align="center"><a href="/">DGS / KML</a></h3></div>
+
+		
+		<nav class="navbar-brand" >
+			<a class="nav-link disabled" href="/line" >I N P U T</a>
+			<a class="nav-link disabled" href="/grid" tabindex="0" >P R O C E S S</a>
+			<a class="nav-link disabled" href="/generate" tabindex="-1" >O U T P U T</a>
+		</nav>
+		  
+	</div>
+	<div id="content" class="shadow-sm p-3 mb-5 bg-white rounded">
+	{% block content %} 
+    {% endblock %}
+	</div>	
+</div>
+</body>
+</html>
+
+

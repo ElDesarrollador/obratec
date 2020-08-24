@@ -1,0 +1,20 @@
+{% extends "layout.html" %} 
+{% block content %}
+<div align="center">
+    <br>
+    <h3><span style="color: #006eff">CONVERSOR XLS a DGS/KML</span></h3>
+    <hr>
+    <p>Nuestra aplicación genera archivos en formato DGS y KML a partir de hojas de cálculo.</p>
+    <p>Usted deberá cargar(subir a nuestro servidor) los archivos de línea y de subestaciones en los siguientes formatos:</p>
+    <ul style="text-align: left">
+        <li><a href="{{ url_for('.formatoL') }}">Formato de LÍNEA</a></li>
+        <li><a href="{{ url_for('.formatoS') }}">Formato de SED</a></li>
+    </ul>
+    <br>
+    <a href="/line" target="_self">
+        <strong><button type="button" class="btn btn-success"> INICIAR </button></strong>
+    </a>
+    <br>
+</div>
+
+{% endblock %}

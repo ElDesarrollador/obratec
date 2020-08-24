@@ -1,0 +1,15 @@
+{% extends "layout1.html" %} 
+{% block content %}
+
+<h3 class="display-4">Datos de SS.EE.</h3>
+<p>Seleccione el archivo en formato <strong>.xls</strong> o <strong>.xlsx</strong> con los datos de las subestaciones de distribución.</p>
+<hr>
+<br>
+<div align="center">
+    <form action="/substation" method="POST" enctype="multipart/form-data" accept-charset="UTF-8">
+        <input name="archivo_sed" type="file" required="required" class="alert-secondary">
+        <input type="submit" class="btn-dark" value="Cargar">
+    </form>
+</div>
+
+{% endblock %}
